@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap');
 
 body {
-    background-color: ivory;
-    
-    
+    background-color: ivory;  
 }
 .sidenav {
     height: 100%;
@@ -30,6 +28,13 @@ h1.index {
     margin-top: 11px;
 }
 
+.painting {
+    width: 200px; 
+    float: inline-start; 
+    float: right; 
+    margin-right: 5%;
+}
+
 img.logo {
     width: 30px;
 }
@@ -49,7 +54,6 @@ h2, h4{
     text-align: center;
     margin-left: 15%;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 li {
@@ -107,3 +111,108 @@ p {
     margin-left: 15%;
 }
 
+@media screen and (max-width: 600px) {
+    .sidenav {
+        height: 100%;
+        width: 115px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(110, 131, 93);
+        overflow-x: hidden;
+        padding-top: 30px;
+        transition: 0.5s;
+    }
+
+    .sidenav a {
+        padding: 10px 10px 10px 22px;
+        text-decoration: none;
+        font-size: 15px;
+        color: whitesmoke;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1, h2, p{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    p.aboutP {
+        margin-left: 30%;
+        margin-right: 5%;
+        font-size: 13px;
+    }
+
+    .contactInfo {
+        text-align: left;
+        margin-left: 130px;
+    }
+
+    h1.index {
+        margin-left: 115px;
+        background-color: rgb(110, 131, 93);
+        padding: 5px;
+        margin-top: 11px;
+        font-size: 20px;
+    }
+
+    p.index {
+        font-size: 15px;
+        margin-left: 25%;
+    }
+
+    img.profile {
+        height: 200px;
+        margin-left: 50%;
+        margin-top: 30px;
+    }
+
+    h1.name {
+        text-align: left;
+        margin-left: 27%;
+        font-size: large;
+    }
+
+    h2 {
+        text-align: center;
+        margin-left: 30%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-left: 30%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+    }
+
+    li {
+        text-align: left;
+        margin-left: 35%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+    }
+
+    .skills-list {
+        margin-left: 15%;
+    }
+
+    h1.about {
+        background-color: rgb(110, 131, 93);
+        margin-left: 25%;
+        font-size: 25px;
+    }
+
+    .painting {
+        width: 120px; 
+        float: inline-end; 
+        float: right; 
+        margin-right: 5%;
+    }
+
+
+}
